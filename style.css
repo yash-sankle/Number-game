@@ -143,34 +143,51 @@ input {
     color: #ff0511;
 }
 
-@media (max-width: 768px) {
-  body {
-    justify-content: flex-start;
-    padding: 2rem;
-  }
+/* Additional Media Query for Android Phones */
+@media only screen and (max-width: 480px) and (min-device-width: 320px) {
+    body {
+        display: block;
+    }
 
-  main {
-    width: 90%;
-    padding: 2rem;
-  }
+    main {
+        width: 90vw;
+        padding: 3rem;
+    }
 
-  .button-wrapper {
-    flex-direction: row;
-    margin-top: 2rem;
-  }
+    h2 {
+        font-size: 1.8rem;
+        margin: 1.5rem;
+    }
 
-  button {
-    min-width: 45%;
-    margin: 1rem;
-  }
+    .image {
+        width: 100%;
+        max-height: 10rem;
+        margin: 1rem 0 2rem 0;
+    }
 
-  #gameArea {
-    text-align: center;
-  }
+    .button-wrapper {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
 
-  input {
-    width: 100%;
-  }
+    button {
+        min-width: 80%;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    input {
+        width: 80%;
+        margin: 2rem 0;
+        padding: 1rem 0;
+        font-size: 1.6rem;
+    }
+
+    .info {
+        margin-top: 1rem;
+    }
+
+    .info span {
+        font-size: 1.6rem;
+    }
 }
-
-
