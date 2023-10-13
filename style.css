@@ -143,3 +143,34 @@ input {
     color: #ff0511;
 }
 
+@media (max-width: 768px) {
+  body {
+    justify-content: flex-start;
+    padding: 2rem;
+  }
+
+  main {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .button-wrapper {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  button {
+    min-width: 45%;
+    margin: 1rem;
+  }
+
+  #gameArea {
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+
